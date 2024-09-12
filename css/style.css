@@ -297,7 +297,8 @@
     }
 
     .navigation{
-        padding: 20px 15px;
+        box-sizing: border-box;
+        padding: 20px 10px;
         margin: 0;
         display: flex;
         align-items: center;
@@ -315,6 +316,7 @@
     }
 
     .container .contain-table-item{
+        place-items: center;
         grid-template-columns: 1fr;
     }
 }
