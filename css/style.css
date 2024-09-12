@@ -157,6 +157,7 @@
 }
 
 .wrap-nav-btn button:first-child{
+    cursor: pointer;
     background: #1882f2;
     border: none;
     outline: none;
@@ -168,6 +169,11 @@
     gap: 3px;
     align-items: center;
     font-weight: 500;
+    transition: background .3s ease;
+}
+
+.wrap-nav-btn button:first-child:hover{
+    background: #1881f27e;
 }
 
 .wrap-nav-btn button:not(:first-child){
@@ -178,6 +184,13 @@
     border-radius: 5px;
     font-size: 14px;
     color: gray;
+    transition: all .3s ease;
+}
+
+.wrap-nav-btn button:not(:first-child):hover{
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
 }
 
 .wrap-nav-btn button:nth-child(2){
