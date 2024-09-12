@@ -111,6 +111,12 @@
     list-style-type: none;
 }
 
+.link:hover{
+    cursor: pointer;
+    transition: color .3s ease;
+    color: #0062ff;
+}
+
 .dropdown::after{
     content: "";
     display: inline-block;
@@ -121,11 +127,17 @@
     border-right: 1.5px solid #5e5e5e;
     border-bottom: 1.5px solid #5e5e5e;
     transform: rotate(45deg);
+    transition: transform .05s ease;
+}
+
+.dropdown:hover::after{
+    margin-bottom: -2px;
+    transform: rotate(-135deg);
 }
 
 .active{
     font-weight: 600;
-    color: blue;
+    color: #0062ff;
     position: relative;
 }
 
@@ -136,7 +148,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background: blue;
+    background: #0062ff;
 }
 
 .wrap-nav-btn{
