@@ -296,6 +296,18 @@
         padding: 0 20px;
     }
 
+    .profile-header h4{
+        font-size: 14px;
+    }
+
+    .wrap-info{
+        font-size: 10px;
+    }
+
+    .info-profile .wrap-info span{
+        font-size: 10px;
+    }
+
     .navigation{
         box-sizing: border-box;
         padding: 20px 10px;
@@ -305,6 +317,10 @@
         gap: 15px;
         flex-direction: column;
         width: 100%;
+    }
+
+    .link{
+        font-size: 11px;
     }
 
     .active{
