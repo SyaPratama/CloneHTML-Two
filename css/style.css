@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Verdana,sans-serif;
+}
+
+.contain-header .profile-header{
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.profile-header .wrapper{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header .wrap-profile-pict{
+    border: 3px solid #3cff00;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name-profile{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.certified{
+    position: relative;
+}
+
+.certified .pin{
+    color: rgb(0, 102, 255);
+}
+
+.certified .success{
+    position: absolute;
+    font-size: 8px;
+    left: 4.5px;
+    top: 7px;
+    color: #fff;
+}
+
+.wrap-profile-pict img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap-info{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgb(105, 105, 105);
+    font-size: 13px;
+}
+
+
+.info-profile{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.info-profile .wrap-info span{
+    font-size: 13px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.navigation .nav-link{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation .nav-link .link{
+    color: #5e5e5e;
+    font-weight: 400;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+.dropdown::after{
+    content: "";
+    display: inline-block;
+    aspect-ratio: 1/1;
+    width: 5px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    border-right: 1.5px solid #5e5e5e;
+    border-bottom: 1.5px solid #5e5e5e;
+    transform: rotate(45deg);
+}
+
+.active{
+    font-weight: 600;
+    color: blue;
+    position: relative;
+}
+
+.active::before{
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: blue;
+}
+
+.wrap-nav-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.wrap-nav-btn button:first-child{
+    background: #1882f2;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.wrap-nav-btn button:not(:first-child){
+    background: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.wrap-nav-btn button:nth-child(2){
+    padding: 0 5px;
+}
+
+.wrap-nav-btn button:nth-child(3){
+    padding: 0 10px;
+}
+
+.container{
+    padding-bottom: 2em;
+}
+
+.container h4{
+    margin: 1em 2em;
+}
+
+.container .contain-table-item{
+    display: grid;
+    place-items: center;
+    margin: 0 2em;
+    grid-template-columns: 386px 386px 386px;
+    gap: 1.5em;
+}
+
+.item{
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap{
+    padding: 0 1.5em;
+    padding-bottom: 15px;
+}
+
+.wrap p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #393939;
+}
+
+.profile-blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-profil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper-profil span{
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+
+.wrapper-profil .profile-blog-picture{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.wrapper-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.menu i{
+    color: #393939;
+    font-size: 12px;
+}
+
+.wrapper-menu .menu span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #393939;
+}
