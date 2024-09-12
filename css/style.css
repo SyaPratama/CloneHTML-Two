@@ -331,6 +331,11 @@
         border: none;
     }
 
+    .certified .success{
+        top: 6px;
+        left: 3.5px;
+    }
+
     .container .contain-table-item{
         place-items: center;
         grid-template-columns: 1fr;
