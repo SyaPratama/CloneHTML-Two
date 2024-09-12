@@ -285,3 +285,32 @@
     font-weight: 500;
     color: #393939;
 }
+
+
+@media (max-width:746px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .navigation{
+        padding: 20px 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .dropdown::after{
+        border: none;
+    }
+
+    .container .contain-table-item{
+        grid-template-columns: 1fr;
+    }
+}
